@@ -1,0 +1,79 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 30em;
+    height: 30em;
+    border-radius: 1em;
+    float: left;
+    margin: 1em;
+}
+.container ul {
+    list-style-type: none;
+    text-align: left;
+}
+.container ul li div {
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+}
+.container ul li div input {
+    border: 0.2em solid black;
+    height: 1.5em;
+}
+.container ul li div input:focus {
+    border-color: red;
+}
+.container form .submit {
+    margin-top: 1.5em;
+}
+
+.registration_cont {
+    background-color: #ccccff;
+}
+
+.login_cont {
+    background-color: #7676ca;
+}
+
+.outer {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.centered {
+    position: relative;
+    display: inline-block;
+    width: 95%;
+}
+
+.left {
+    width: 40%;
+    float: left;
+    text-align: right;
+}
+.right {
+    width: 55%;
+    margin-left: 1em;
+    float: left;
+}
+
+.submit {
+    border: 2px solid black;
+    background-color: white;
+    width: 35%;
+    height: 3em;
+    border-radius: 3em;
+    font-weight: bold;
+}
+.submit:hover {
+    cursor: pointer;
+    border-color: white;
+    background-color: black;
+    color: white;
+}

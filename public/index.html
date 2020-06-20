@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+
+    <title>MJU 코로나 자동진단</title>
+</head>
+<body>
+
+<h1>명지대학교 온라인 코로나 진단서 작성 매크로</h1>
+
+<div class="registration_cont container">
+    <div class="outer">
+        <div class="inner">
+            <div class="centered">
+                <form name="registration_form" method="POST" action="/registration">
+                    <h2>회원가입</h2>
+                    <ul>
+                        <li>
+                            <div>
+                                <div class="left">
+                                    <label>SSO 아이디(학번)</label>
+                                </div>
+                                <div class="right">
+                                    <input type="number" name="stud_id">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="left">
+                                    <label>SSO 비밀번호</label>
+                                </div>
+                                <div class="right">
+                                    <input type="password" name="pw">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="left">
+                                    <label>SSO 비밀번호 확인</label>
+                                </div>
+                                <div class="right">
+                                    <input type="password" name="pw_confirm">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="left">
+                                    <label>이메일</label>
+                                </div>
+                                <div class="right">
+                                    <input type="email" name="email">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="left">
+                                    <label>종강일</label>
+                                </div>
+                                <div class="right">
+                                    <input type="date" name="last_classdate">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <input type="submit" class="submit" value="확인">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="login_cont container">
+    <div class="outer">
+        <div class="inner">
+            <div class="centered">
+                <form name="login_form" method="POST" action="">
+                    <h2>로그인 (정보수정용)</h2>
+                    <ul>
+                        <li>
+                            <div>
+                                <div class="left">
+                                    <label>SSO 아이디(학번)</label>
+                                </div>
+                                <div class="right">
+                                    <input type="number" name="stud_id" id="stud_id">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="left">
+                                    <label>SSO 비밀번호</label>
+                                </div>
+                                <div class="right">
+                                    <input type="password" name="pw" id="pw">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <input type="submit" class="submit" value="확인">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
