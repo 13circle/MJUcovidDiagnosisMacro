@@ -27,6 +27,15 @@ html, body {
 .container form .submit {
     margin-top: 1.5em;
 }
+.container .errtxt {
+	height: 0.7em;
+	text-align: left;
+	margin-left: 2em;
+	margin-top: 0em;
+	margin-bottom: 0em;
+	font-weight: bold;
+	color: red;
+}
 
 .registration_cont {
     background-color: #ccccff;
