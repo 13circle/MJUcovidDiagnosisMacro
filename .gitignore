@@ -1,1 +1,4 @@
 node_modules/
+._*.*
+diagnosis/
+config/mailer.js
