@@ -1,6 +1,9 @@
+require("dotenv").config();
+
 module.exports = {
-    host: 'localhost',
-    user: 'admin',
-    password: 'Dodge4college!',
-    database: 'MJU_CORONA_DIAGNOSIS_MACRO'
+  host: process.env.MYSQL_HOST,
+  port: parseInt(process.env.MYSQL_PORT),
+  user: process.env.MYSQL_USER,
+  password: process.env.MYSQL_PASSWORD,
+  database: process.env.MYSQL_DB,
 };
