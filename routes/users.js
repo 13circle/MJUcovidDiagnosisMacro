@@ -49,13 +49,19 @@ router.post("/register", (req, res, next) => {
       });
       return;
     } else {
-      const sqlReg =
-        "INSERT INTO User(stud_id, stud_pw, stud_name, email, send_mail) VALUES (?, ?, ?, ?, ?)";
+      const sqlReg = "INSERT INTO User VALUES (?, ?, ?, ?, ?, ?)";
       dbConn.query(
         sqlReg,
-        [stud_id, pwcrypto.encrypt(stud_pw), stud_name, email, send_mail],
+        [
+          stud_id,
+          pwcrypto.encrypt(stud_pw),
+          stud_name,
+          email,
+          send_mail,
+          new Date().getTime(),
+        ],
         (err, results) => {
-          if(err) {
+          if (err) {
             res.status(500).send({ success: false, errmsg: err });
             return;
           }
@@ -65,8 +71,6 @@ router.post("/register", (req, res, next) => {
       );
     }
   });
-
-  res.send("/register - User registration");
 });
 
 router.delete("/unregister", (req, res, next) => {
